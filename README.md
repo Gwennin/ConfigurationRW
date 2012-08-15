@@ -1,7 +1,7 @@
 ConfigurationReader
 ===================
 
-A little C++ configuration "key value" file reader
+A little C++ configuration "key value" file reader.
 
 ##Configuration File example
 
