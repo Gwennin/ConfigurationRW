@@ -53,5 +53,6 @@ std::multimap<std::string, std::string> ConfigurationReader::getConfiguration() 
 ConfigurationReader::~ConfigurationReader() {
 
 	_file->close();
+	delete _file;
 	_file = 0;
 }
