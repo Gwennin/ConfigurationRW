@@ -17,7 +17,7 @@ else
 endif
 endif
 CCSHAREDFLAG=-shared
-EXEC=ConfigurationReader
+EXEC=ConfigurationRW
 SRC= $(wildcard *.cpp)
 OBJ= $(SRC:.cpp=.o)
 
