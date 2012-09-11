@@ -1,7 +1,7 @@
-ConfigurationReader
+ConfigurationRW
 ===================
 
-A little C++ configuration "key value" file reader.
+A little C++ configuration "key value" file reader/writer.
 
 ##Configuration File example
 
