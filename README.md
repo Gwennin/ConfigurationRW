@@ -19,7 +19,12 @@ Keys and values ar key sensitive.
 
 Include the "Configuration.h" file and use it like that :
 
-	ConfigurationNmspc::Configuration conf("YourConfigFilePath");
-	vector<string> items = conf["YourWantedKey"];
+	ConfigurationNmspc::Configuration conf("SomeConfigFilePath");
+	vector<string> items = conf["SomeKey"];		// Get all entries for key "SomeKey"
+	
+	conf.addValue("SomeKey", "SomeValue");		// Append the entry "SomeValue" with key "SomeKey"
+	conf.setValue("SomeKey", "SomeValue");		// Replace the entry who have the first occurence of the key "SomeKey" with the entry "SomeValue"
+	conf.removeValue("SomeKey", "SomeValue");	// Remove the entry "SomeValue" with key "SomeKey"
+	conf.purgeKey("SomeKey");			// Remove all entries with key "SomeKey"
 
 That's all!
